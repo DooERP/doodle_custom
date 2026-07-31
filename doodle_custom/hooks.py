@@ -131,13 +131,22 @@ scheduler_events = {
         "doodle_custom.tasks.daily",
         "doodle_custom.doodle_custom.utils.cleanup.call_cleanup_endpoint"
     ],
+	"hourly": [
+        "doodle_custom.doodle_custom.doctype.zktecho_check_in_logs.zktecho_check_in_logs.enqueue_fetch_and_process_data"
+    ],
     "cron": {
         "0 8 * * *": [
             "doodle_custom.tasks.cron"
         ],
         "*/5 * * * *": [
             "doodle_custom.doodle_custom.utils.lead-api.auto_lead_creation"
-        ]
+        ],
+		"10 22 * * *": [
+			"doodle_custom.custom.zkteco.enqueue_sync_zkteco_logs"
+		],
+		"* * * * *": [
+            "doodle_custom.custom.zkteco.sync_morning_checkins"
+        ],
     }
 }
  
