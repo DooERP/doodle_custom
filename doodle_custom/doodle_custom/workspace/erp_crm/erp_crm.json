@@ -1,0 +1,34 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"sm3v9nuXz_\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">ERP CRM</span>\",\"col\":12}},{\"id\":\"_kN5yrqme5\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Report crm\",\"col\":12}}]",
+ "creation": "2026-07-17 12:07:42.129277",
+ "custom_blocks": [
+  {
+   "custom_block_name": "Report crm",
+   "label": "Report crm"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "gantt",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "ERP CRM",
+ "links": [],
+ "modified": "2026-07-17 12:07:42.129277",
+ "modified_by": "Administrator",
+ "module": "Doodle Custom",
+ "name": "ERP CRM",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 39.0,
+ "shortcuts": [],
+ "title": "ERP CRM"
+}

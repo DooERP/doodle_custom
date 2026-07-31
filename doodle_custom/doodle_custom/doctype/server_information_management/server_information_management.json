@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:server_ip",
+ "creation": "2026-07-17 10:41:11.168975",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "server_ip",
+  "server_provider",
+  "status",
+  "available_ram",
+  "used_ram",
+  "column_break_krpx",
+  "ubuntu_version",
+  "erpnext_version",
+  "sites",
+  "total_ram",
+  "buffcache",
+  "server_storage_section",
+  "total_storage",
+  "available",
+  "column_break_nzrx",
+  "used"
+ ],
+ "fields": [
+  {
+   "fieldname": "server_ip",
+   "fieldtype": "Data",
+   "label": "Server IP",
+   "unique": 1
+  },
+  {
+   "fieldname": "server_provider",
+   "fieldtype": "Data",
+   "label": "Server Provider"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nActive\nInactive"
+  },
+  {
+   "fieldname": "available_ram",
+   "fieldtype": "Data",
+   "label": "Available RAM"
+  },
+  {
+   "fieldname": "used_ram",
+   "fieldtype": "Data",
+   "label": "Used RAM"
+  },
+  {
+   "fieldname": "column_break_krpx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ubuntu_version",
+   "fieldtype": "Data",
+   "label": "Ubuntu Version"
+  },
+  {
+   "fieldname": "erpnext_version",
+   "fieldtype": "Select",
+   "label": "ERPNext Version",
+   "options": "\nERPNext Version-16\nERPNext Version-15\nERPNext Version-14\nERPNext Version-13"
+  },
+  {
+   "fieldname": "sites",
+   "fieldtype": "Data",
+   "label": "Sites"
+  },
+  {
+   "fieldname": "total_ram",
+   "fieldtype": "Data",
+   "label": "Total RAM"
+  },
+  {
+   "fieldname": "buffcache",
+   "fieldtype": "Data",
+   "label": "buff/cache"
+  },
+  {
+   "fieldname": "server_storage_section",
+   "fieldtype": "Section Break",
+   "label": "Server Storage"
+  },
+  {
+   "fieldname": "total_storage",
+   "fieldtype": "Data",
+   "label": "Total Storage"
+  },
+  {
+   "fieldname": "available",
+   "fieldtype": "Data",
+   "label": "Available"
+  },
+  {
+   "fieldname": "column_break_nzrx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "used",
+   "fieldtype": "Data",
+   "label": "Used"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-21 15:06:59.118975",
+ "modified_by": "Administrator",
+ "module": "Doodle Custom",
+ "name": "Server Information Management",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
