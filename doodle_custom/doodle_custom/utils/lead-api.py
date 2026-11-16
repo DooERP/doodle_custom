@@ -78,7 +78,7 @@ def process_get_a_free_quote(form_data):
             "state": state,
             "kc_captcha": kc_captcha,
             "kc_honeypot": kc_honeypot,
-            "custom_services": services_str
+            "custom_new_services": services_str
         }
 
         new_lead = frappe.get_doc(new_lead_data)
@@ -124,7 +124,8 @@ def process_contact_us(form_data):
             "custom_message": message,
             "website": website,
             "page_title": page_title,
-            "custom_services": services_str
+            "custom_new_services": services_str,
+            "custom_services" : "Others"
         }
 
         new_lead = frappe.get_doc(new_lead_data)
@@ -168,7 +169,7 @@ def process_enquire_now_popup(form_data):
             "custom_message": message,
             "website": website,
             "page_title": page_title,
-            "custom_services": services_str
+            "custom_new_services": services_str
         }
 
         new_lead = frappe.get_doc(new_lead_data)
@@ -215,7 +216,7 @@ def process_get_a_free_quote_common(form_data):
             "custom_message": message,
             "country_name": country,
             "state": state,
-            "custom_services": services_str
+            "custom_new_services": services_str
         }
 
         new_lead = frappe.get_doc(new_lead_data)

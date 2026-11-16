@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:instance_name",
  "creation": "2026-07-17 10:44:26.292425",
@@ -138,7 +139,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-17 10:50:58.567948",
+ "modified": "2026-08-21 12:10:10.432226",
  "modified_by": "Administrator",
  "module": "Doodle Custom",
  "name": "Instance Custom App Detail",

@@ -33,7 +33,13 @@ app_license = "MIT"
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
 doctype_js = {"Process Statement Of Accounts" : "public/js/process_statement_of_accounts_custom.js"},
-doctype_js = {"Asset" : "public/js/asset.js"}
+doctype_js = {
+    "Asset" : "public/js/asset.js",
+    "Lead" : "public/js/lead.js",
+	"Task" : "public/js/task.js",
+    "Timesheet" : "public/js/timesheet.js",
+	"Opportunity" : "public/js/opportunity.js"
+}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -120,7 +126,10 @@ doc_events = {
     },
     "Delivery Note": {
         "validate": "doodle_custom.doodle_custom.doctype.delivery_note.delivery_note.validate_delivery_note"
-    }
+    },
+    "Lead":{
+        "on_trash": "doodle_custom.doc_events.save_deleted_lead"
+	}
 }
 
 # Scheduled Tasks
@@ -139,7 +148,8 @@ scheduler_events = {
             "doodle_custom.tasks.cron"
         ],
         "*/5 * * * *": [
-            "doodle_custom.doodle_custom.utils.lead-api.auto_lead_creation"
+            "doodle_custom.doodle_custom.utils.lead-api.auto_lead_creation",
+            "doodle_custom.desert_forest.sync_desert_forest_leads"
         ],
 		"10 22 * * *": [
 			"doodle_custom.custom.zkteco.enqueue_sync_zkteco_logs"
@@ -147,6 +157,7 @@ scheduler_events = {
 		"* * * * *": [
             "doodle_custom.custom.zkteco.sync_morning_checkins"
         ],
+		"0 0 * * *": ["doohrm.schedular.run_scheduled_allocation"],
     }
 }
  
@@ -215,4 +226,19 @@ user_data_fields = [
 # auth_hooks = [
 #	"doodle_custom.auth.validate"
 # ]
+
+fixtures = [
+    {
+        "doctype": "Custom Field",
+        "filters": [
+            ["Custom Field", "module", "=", "Doodle Custom"]
+        ]
+    },
+    {
+        "doctype": "Client Script",
+        "filters": [
+            ["Client Script", "module", "=", "Doodle Custom"]
+        ]
+    }
+]
 

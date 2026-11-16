@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-08-03 15:35:04.601453",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "activity",
+  "client_input_required",
+  "requested_on",
+  "received_yn",
+  "received_on",
+  "completed_yn",
+  "completed_on",
+  "uat_yn",
+  "uat_date",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "activity",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Activity",
+   "options": "Activity"
+  },
+  {
+   "fieldname": "client_input_required",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Client Input Required"
+  },
+  {
+   "fieldname": "requested_on",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Requested On"
+  },
+  {
+   "fieldname": "received_yn",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Received (Y/N)",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "received_on",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Received On"
+  },
+  {
+   "fieldname": "completed_yn",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Completed (Y/N)",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "completed_on",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Completed On"
+  },
+  {
+   "fieldname": "uat_yn",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "UAT (Y/N",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "uat_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "UAT Date"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Remarks"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-08-03 15:35:04.601453",
+ "modified_by": "Administrator",
+ "module": "Doodle Custom",
+ "name": "Company Setup",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

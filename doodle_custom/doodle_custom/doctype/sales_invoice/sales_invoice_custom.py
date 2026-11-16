@@ -144,5 +144,7 @@ def validate_sales_invoice(doc, method):
     """
     Enforces that Sales Invoice must have a linked Sales Order.
     """
+    if doc.is_return:
+        return
     if not any(item.sales_order for item in doc.items):
         frappe.throw("Sales Order is mandatory for Sales Invoice.")

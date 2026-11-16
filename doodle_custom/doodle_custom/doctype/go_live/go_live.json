@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-08-03 16:14:23.765849",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "activity",
+  "planned_date",
+  "completed_yn",
+  "completed_on",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "activity",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Activity",
+   "options": "Activity"
+  },
+  {
+   "fieldname": "completed_yn",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Completed (Y/N)",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "completed_on",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Completed On"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "planned_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Planned Date"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-08-03 16:15:07.111260",
+ "modified_by": "Administrator",
+ "module": "Doodle Custom",
+ "name": "Go Live",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

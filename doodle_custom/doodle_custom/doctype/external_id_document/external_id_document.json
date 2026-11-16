@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:external_id",
+ "creation": "2026-10-14 16:33:48.411359",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "lead_id",
+  "external_id",
+  "phone_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "lead_id",
+   "fieldtype": "Data",
+   "label": "Lead Id"
+  },
+  {
+   "fieldname": "external_id",
+   "fieldtype": "Data",
+   "label": "External Id",
+   "unique": 1
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-10-14 18:10:00.219521",
+ "modified_by": "Administrator",
+ "module": "Doodle Custom",
+ "name": "External Id Document",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
